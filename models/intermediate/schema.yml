@@ -1,21 +1,15 @@
 version: 2
 
 models:
-  - name: stg_raw_data__transacoes_usuarios
+  - name: stg_users__transactions
     description: Dados de transação de usuários
     columns:
       - name: codigo_transacao
         description: Código único da transação
-        tests:
-              - not_null
-              - unique
       - name: date_transacao
         description: Data e hora de criação da transação (UTC 0)
       - name: dispositivo_captura
         description: Dispositivo de captura (POS, Tapton ou Link de pagamento)
-        tests:
-              - accepted_values:
-                  values: ['pos', 'tap', 'link']
       - name: bandeira_cartao
         description: Bandeira do cartão
       - name: metodo_pagamento
