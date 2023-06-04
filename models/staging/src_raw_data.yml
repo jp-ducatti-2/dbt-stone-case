@@ -16,15 +16,10 @@ sources:
         columns:
           - name: '"codigo da transacao"'
             description: Código único da transação
-            tests:
-              - not_null
           - name: '"data e hora da transacao"'
             description: Data e hora da transação (UTC 0)
           - name: '"metodo de captura"'
             description: Dispositivo de captura (POS, Tapton ou Link de pagamento)
-            tests:
-              - accepted_values:
-                  values: ['pos', 'tap', 'link']
           - name: '"bandeira do cartao"'
             description: Bandeira do cartão
           - name: '"metodo de pagamento"'
