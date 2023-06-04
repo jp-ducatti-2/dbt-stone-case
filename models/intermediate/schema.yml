@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_users__transactions
+  - name: int_users__transactions
     description: Dados de transação de usuários
     columns:
       - name: codigo_transacao
