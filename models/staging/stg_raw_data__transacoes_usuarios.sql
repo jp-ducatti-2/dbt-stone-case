@@ -4,7 +4,6 @@
     )
 }}
 
-
 SELECT
     "codigo da transacao"           AS codigo_transacao,
     "data e hora da transacao"      AS date_transacao,
@@ -16,4 +15,4 @@ SELECT
     "codigo do usuario"             AS codigo_usuario,
     LOWER("estado do usuario")      AS estado_usuario,
     "cidade do usuario"             AS cidade_usuario
-FROM {{ source('raw_data_stone','transacoes_usuarios') }}
+FROM {{ source('raw_data','transacoes_usuarios') }}

@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_raw_data_stone__transacoes_usuarios
+  - name: stg_raw_data__transacoes_usuarios
     description: Dados de transação de usuários
     columns:
       - name: codigo_transacao
